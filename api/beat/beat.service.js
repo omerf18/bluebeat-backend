@@ -1,6 +1,5 @@
 
 const dbService = require('../../services/db.service')
-const reviewService = require('../review/review.service')
 const ObjectId = require('mongodb').ObjectId
 
 module.exports = {
@@ -13,10 +12,13 @@ module.exports = {
 
 async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
+    console.log('criteria', criteria);
     const collection = await dbService.getCollection('beat')
+    // console.log('collection', collection);
     try {
         const beats = await collection.find(criteria).toArray();
-        beats.forEach(beat => delete beat.password);
+        console.log('beats', beats);
+        // beats.forEach(beat => delete beat.password);
         return beats
     } catch (err) {
         console.log('ERROR: cannot find beats')
@@ -29,11 +31,6 @@ async function getById(beatId) {
     try {
         const beat = await collection.findOne({ '_id': ObjectId(beatId) })
         delete beat.password
-        beat.givenReviews = await reviewService.query({ byBeatId: ObjectId(beat._id) })
-        beat.givenReviews = beat.givenReviews.map(review => {
-            delete review.byBeat
-            return review
-        })
         return beat
     } catch (err) {
         console.log(`ERROR: while finding beat ${beatId}`)
@@ -54,9 +51,8 @@ async function remove(beatId) {
 async function update(beat) {
     const collection = await dbService.getCollection('beat')
     beat._id = ObjectId(beat._id);
-
     try {
-        await collection.replaceOne({ _id: beat._id }, { $set: beat })
+        await collection.replaceOne({ _id: beat._id },  beat )
         return beat
     } catch (err) {
         console.log(`ERROR: cannot update beat ${beat._id}`)
@@ -75,15 +71,19 @@ async function add(beat) {
     }
 }
 
-function _buildCriteria(filterBy) {
+
+function  _buildCriteria(filterBy) {
+    console.log('filterByfilterBy', filterBy);
     const criteria = {};
-    if (filterBy.txt) {
-        criteria.beatname = filterBy.txt
+    if (filterBy.genre === 'ALL' && filterBy.name === '') {
+        return criteria
     }
-    if (filterBy.minBalance) {
-        criteria.balance = { $gte: +filterBy.minBalance }
+    if (filterBy.genre && filterBy.genre !== 'ALL') {
+        criteria.genre = filterBy.genre
     }
-    return criteria;
+    if (filterBy.name && filterBy.name !== '') {
+        criteria.name = filterBy.name.toUpperCase()
+    }
+
+    return criteria
 }
-
-

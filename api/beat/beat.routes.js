@@ -1,6 +1,6 @@
 const express = require('express')
 const { requireAuth, requireAdmin } = require('../../middlewares/requireAuth.middleware')
-const { getBeat, getBeats, deleteBeat, updateBeat } = require('./beat.controller')
+const { getBeat, getBeats, deleteBeat, updateBeat, addBeat } = require('./beat.controller')
 const router = express.Router()
 
 // middleware that is specific to this router
@@ -9,6 +9,7 @@ const router = express.Router()
 router.get('/', getBeats)
 router.get('/:id', getBeat)
 router.put('/:id', updateBeat)
+router.post('/', addBeat)
 router.delete('/:id', deleteBeat)
-
+  
 module.exports = router

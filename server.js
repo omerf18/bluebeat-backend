@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 } else {
     const corsOptions = {
         origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:3000', 'http://localhost:3000'],
+        // origin: ['http://127.0.0.1:8082', 'http://localhost:8082', 'http://127.0.0.1:3030', 'http://localhost:3030'],
         credentials: true
     };
     app.use(cors(corsOptions));
@@ -32,16 +33,14 @@ if (process.env.NODE_ENV === 'production') {
 
 const authRoutes = require('./api/auth/auth.routes')
 const beatRoutes = require('./api/beat/beat.routes')
-// const reviewRoutes = require('./api/review/review.routes')
-// const toyRoutes = require('./api/toy/toy.routes')
+// const userRoutes = require('./api/user/user.routes')
 const connectSockets = require('./api/socket/socket.routes')
 
 
 // routes
 app.use('/api/auth', authRoutes)
 app.use('/api/beat', beatRoutes)
-// app.use('/api/review', reviewRoutes)
-// app.use('/api/toy', toyRoutes)
+// app.use('/api/user', userRoutes)
 connectSockets(io)
 
 app.get('/**', (req, res) => {
