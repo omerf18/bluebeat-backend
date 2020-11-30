@@ -18,7 +18,7 @@ async function query(filterBy = {}) {
     try {
         const beats = await collection.find(criteria).toArray();
         console.log('beats', beats);
-        // beats.forEach(beat => delete beat.password);
+        beats.forEach(beat => delete beat.password);
         return beats
     } catch (err) {
         console.log('ERROR: cannot find beats')
@@ -73,7 +73,7 @@ async function add(beat) {
 
 
 function  _buildCriteria(filterBy) {
-    console.log('filterByfilterBy', filterBy);
+    // console.log('filterByfilterBy', filterBy);
     const criteria = {};
     if (filterBy.genre === 'ALL' && filterBy.name === '') {
         return criteria
@@ -81,9 +81,9 @@ function  _buildCriteria(filterBy) {
     if (filterBy.genre && filterBy.genre !== 'ALL') {
         criteria.genre = filterBy.genre
     }
-    if (filterBy.name && filterBy.name !== '') {
-        criteria.name = filterBy.name.toUpperCase()
-    }
+    // if (filterBy.name && filterBy.name !== '') {
+    //     criteria.name = filterBy.name.toUpperCase()
+    // }
 
     return criteria
 }
