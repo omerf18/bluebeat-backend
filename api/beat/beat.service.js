@@ -52,7 +52,7 @@ async function update(beat) {
     const collection = await dbService.getCollection('beat')
     beat._id = ObjectId(beat._id);
     try {
-        await collection.replaceOne({ _id: beat._id }, { $set: beat })
+        await collection.replaceOne({ _id: beat._id },  beat )
         return beat
     } catch (err) {
         console.log(`ERROR: cannot update beat ${beat._id}`)
