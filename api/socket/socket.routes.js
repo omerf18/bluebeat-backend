@@ -26,3 +26,7 @@ function connectSockets(io) {
         })
     })
 }
+                                    // socket.on('add song', song =>{
+                                    //     console.log('song',song)
+                                    //     // io.to(socket.myTopic).emit('add song',song)
+                                    // })
