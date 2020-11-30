@@ -17,9 +17,12 @@ function connectSockets(io) {
             socket.myTopic = topic;
         })
         socket.on('user typing', typing => {
-            console.log(typing);
-            socket.broadcast.emit('typing', typing);
-            // io.emit('typing', typing)
+            // socket.broadcast.emit('typing', typing);
+            socket.broadcast.to(socket.myTopic).emit('typing', typing)
+        })
+        socket.on('add song', song => {
+            console.log(song);
+            socket.broadcast.emit('add song', song);
         })
     })
 }
