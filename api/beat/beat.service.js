@@ -12,12 +12,9 @@ module.exports = {
 
 async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
-    console.log('criteria', criteria);
     const collection = await dbService.getCollection('beat')
-    // console.log('collection', collection);
     try {
         const beats = await collection.find(criteria).toArray();
-        console.log('beats', beats);
         beats.forEach(beat => delete beat.password);
         return beats
     } catch (err) {

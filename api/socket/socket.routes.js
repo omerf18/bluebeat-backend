@@ -1,27 +1,26 @@
-
 module.exports = connectSockets
 
 function connectSockets(io) {
     io.on('connection', socket => {
-        socket.on('beat update', beat => {
-            console.log('**********', beat);
-            io.to(socket.myTopic).emit('beat update', beat)
+
+        socket.on('sendMsg', (msg) => {
+            io.to(socket.roomId).emit('sentMsg', msg)
         })
-        socket.on('add song', song => {
-            io.to(socket.myTopic).emit('add song', song)
+        socket.on('beatChanged', (beat) => {
+            socket.broadcast.to(socket.roomId).emit('beatChanged', beat)
         })
-        socket.on('chat newMsg', msg => {
-            io.to(socket.myTopic).emit('chat addMsg', msg)
+        socket.on('songChanged', (song) => {
+            socket.broadcast.to(socket.roomId).emit('songChanged', song)
         })
-        socket.on('beat topic', topic => {
-            if (socket.myTopic) {
-                socket.leave(socket.myTopic)
+        socket.on('joinRoom', roomId => {
+            if (socket.roomId) {
+                socket.leave(socket.roomId)
             }
-            socket.join(topic)
-            socket.myTopic = topic;
+            socket.join(roomId)
+            socket.roomId = roomId;
         })
-        socket.on('user typing', typing => {
-            socket.broadcast.emit('typing', typing);
+        socket.on('userTyping', loggedinUser => {
+            socket.broadcast.to(socket.roomId).emit('userTyping', loggedinUser)
         })
     })
 }
