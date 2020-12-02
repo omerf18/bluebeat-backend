@@ -1,14 +1,16 @@
 const bcrypt = require('bcrypt')
-// const userService = require('../user/user.service')
+const userService = require('../user/user.service')
 const logger = require('../../services/logger.service')
 
 const saltRounds = 10
 
 async function login(email, password) {
+    console.log(email, password);
     logger.debug(`auth.service - login with email: ${email}`)
     if (!email || !password) throw new Error('email and password are required!')
 
-    const user = await vice.getByEmail(email)
+    const user = await userService.getByEmail(email)
+    console.log('useruser', user);
     if (!user) return Promise.reject('Invalid email or password')
     const match = await bcrypt.compare(password, user.password)
     if (!match) return Promise.reject('Invalid email or password')
@@ -22,7 +24,7 @@ async function signup(email, password, username) {
     if (!email || !password || !username) return Promise.reject('email, username and password are required!')
 
     const hash = await bcrypt.hash(password, saltRounds)
-    return vice.add({email, password: hash, username})
+    return userService.add({email, password: hash, username})
 }
 
 module.exports = {
