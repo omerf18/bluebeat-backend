@@ -8,6 +8,7 @@ module.exports = {
 
 // Database Name
 const dbName = 'beatDb';
+// const dbName = 'atlas_DB';
 
 var dbConn = null;
 

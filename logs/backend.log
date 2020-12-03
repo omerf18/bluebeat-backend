@@ -259,3 +259,16 @@ Wed, 02 Dec 2020 11:09:00 GMT - Debug - auth.service - login with email: ram@gma
 Wed, 02 Dec 2020 11:09:05 GMT - Debug - auth.service - login with email: ram@gmail.com
 Wed, 02 Dec 2020 12:22:38 GMT - Debug - auth.service - login with email: ad@gmail.com
 Wed, 02 Dec 2020 12:27:22 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 12:27:55 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 12:28:06 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:35:35 GMT - Debug - auth.service - login with email: tom@gmail.co
+Thu, 03 Dec 2020 09:16:51 GMT - Debug - auth.service - login with email: ram@gmail.com
+Thu, 03 Dec 2020 11:52:58 GMT - Debug - rotem@gmail.com, rotem, 555
+Thu, 03 Dec 2020 11:52:58 GMT - Debug - auth.service - signup with email: rotem@gmail.com, username: rotem
+Thu, 03 Dec 2020 11:52:58 GMT - Debug - auth.route - new account created: {"email":"rotem@gmail.com","password":"$2b$10$FkLFAVG0LBXyiJjE0D3vteECJqfwn3VOeIzApifehJVsqw6RzwSma","username":"rotem","_id":"5fc8d19a169c403054673e00"}
+Thu, 03 Dec 2020 11:52:58 GMT - Debug - auth.service - login with email: rotem@gmail.com
+Thu, 03 Dec 2020 11:56:09 GMT - Debug - auth.service - login with email: 
+Thu, 03 Dec 2020 18:15:04 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 18:26:24 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 18:27:53 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 18:49:18 GMT - Info - Server is running on port: 3030
