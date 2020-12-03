@@ -10,7 +10,7 @@ function connectSockets(io) {
             socket.broadcast.to(socket.roomId).emit('beatChanged', beat)
         })
         socket.on('songChanged', (song) => {
-            socket.broadcast.to(socket.roomId).emit('songChanged', song)
+            io.to(socket.roomId).emit('songChanged', song)
         })
         socket.on('joinRoom', roomId => {
             if (socket.roomId) {

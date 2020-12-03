@@ -255,3 +255,57 @@ Wed, 02 Dec 2020 08:06:53 GMT - Info - Server is running on port: 3030
 Wed, 02 Dec 2020 08:12:05 GMT - Info - Server is running on port: 3030
 Wed, 02 Dec 2020 09:09:26 GMT - Info - Server is running on port: 3030
 
+Wed, 02 Dec 2020 12:36:42 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 13:34:03 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 13:59:45 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:45 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:45 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:46 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:46 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:49 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:49 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:50 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:50 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 13:59:50 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 14:01:37 GMT - Debug - dennisnemirovski@gmail.com, dennis, 123
+Wed, 02 Dec 2020 14:01:37 GMT - Debug - auth.service - signup with email: dennisnemirovski@gmail.com, username: dennis
+Wed, 02 Dec 2020 14:01:37 GMT - Debug - auth.route - new account created: {"email":"dennisnemirovski@gmail.com","password":"$2b$10$fdWB4lPhBFMoDfqiImCrBewUkuEjIyKE6HMMYo8KN5iKEAxijVU3W","username":"dennis","_id":"5fc79e41cdd1674ab0687fba"}
+Wed, 02 Dec 2020 14:01:37 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 14:02:25 GMT - Debug - auth.service - login with email: dennisnemirovski@gmail.com
+Wed, 02 Dec 2020 14:03:33 GMT - Debug - dennis1@gmail.com, roni, 123
+Wed, 02 Dec 2020 14:03:33 GMT - Debug - auth.service - signup with email: dennis1@gmail.com, username: roni
+Wed, 02 Dec 2020 14:03:33 GMT - Debug - auth.route - new account created: {"email":"dennis1@gmail.com","password":"$2b$10$rCEx0Z4QrOt9rZGPBkYF8eXRMOfFzCzcH87Tunz.pEeRR6LaeV8HS","username":"roni","_id":"5fc79eb5cdd1674ab0687fbb"}
+Wed, 02 Dec 2020 14:03:33 GMT - Debug - auth.service - login with email: dennis1@gmail.com
+Wed, 02 Dec 2020 14:45:21 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 15:35:22 GMT - Debug - dennis@gmail.com, Roni, 123
+Wed, 02 Dec 2020 15:35:22 GMT - Debug - auth.service - signup with email: dennis@gmail.com, username: Roni
+Wed, 02 Dec 2020 15:35:22 GMT - Debug - auth.route - new account created: {"email":"dennis@gmail.com","password":"$2b$10$yZYf1pjrRk/BFoPzIvejq.f.fUgVGZzLydTmfFN.rljIk5fetc1TW","username":"Roni","_id":"5fc7b43ac850ed3878db3485"}
+Wed, 02 Dec 2020 15:35:22 GMT - Debug - auth.service - login with email: dennis@gmail.com
+Wed, 02 Dec 2020 16:52:04 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 16:52:17 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 16:59:51 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:00:13 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:00:22 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:08:41 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:09:31 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:12:10 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:15:31 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:15:45 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:15:58 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:25:43 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:35:17 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:37:48 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 17:52:55 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:32:10 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:36:22 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:37:57 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:41:37 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 19:41:53 GMT - Info - Server is running on port: 3030
+Wed, 02 Dec 2020 20:07:13 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 09:24:50 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 09:30:21 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 09:31:19 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 11:00:20 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 12:00:19 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 12:05:13 GMT - Info - Server is running on port: 3030
+Thu, 03 Dec 2020 12:15:04 GMT - Info - Server is running on port: 3030
