@@ -391,3 +391,13 @@ Fri, 04 Dec 2020 16:19:09 GMT - Info - Server is running on port: 3030
 Sat, 05 Dec 2020 11:09:45 GMT - Info - Server is running on port: 3030
 Sat, 05 Dec 2020 11:23:08 GMT - Info - Server is running on port: 3030
 Sat, 05 Dec 2020 14:10:51 GMT - Info - Server is running on port: 3030
+Sat, 05 Dec 2020 20:14:38 GMT - Info - Server is running on port: 3030
+Sun, 06 Dec 2020 09:43:05 GMT - Debug - ItayResponder@walla.com, ItayResponder, 123
+Sun, 06 Dec 2020 09:43:05 GMT - Debug - auth.service - signup with email: ItayResponder@walla.com, username: ItayResponder
+Sun, 06 Dec 2020 09:43:05 GMT - Debug - auth.route - new account created: {"email":"ItayResponder@walla.com","password":"$2b$10$6fVr4HIZuTD.g6RLSgZhl.NROoDXbUFE89yYp3eirMcn3SMXtq4eO","username":"ItayResponder","_id":"5fcca7a926909928a85ea0a4"}
+Sun, 06 Dec 2020 09:43:05 GMT - Debug - auth.service - login with email: ItayResponder@walla.com
+Sun, 06 Dec 2020 09:47:23 GMT - Debug - auth.service - login with email: 
+Sun, 06 Dec 2020 09:47:49 GMT - Debug - itayResponder@walla.com, ItayResponder, 123
+Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.service - signup with email: itayResponder@walla.com, username: ItayResponder
+Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.route - new account created: {"email":"itayResponder@walla.com","password":"$2b$10$j5iOK5XT7/uI8.CcaxDKW.kP6I4c/YnItJL2dZRug1Mu35Bb5aQxq","username":"ItayResponder","_id":"5fcca8c526909928a85ea0a6"}
+Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.service - login with email: itayResponder@walla.com
