@@ -401,3 +401,8 @@ Sun, 06 Dec 2020 09:47:49 GMT - Debug - itayResponder@walla.com, ItayResponder, 
 Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.service - signup with email: itayResponder@walla.com, username: ItayResponder
 Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.route - new account created: {"email":"itayResponder@walla.com","password":"$2b$10$j5iOK5XT7/uI8.CcaxDKW.kP6I4c/YnItJL2dZRug1Mu35Bb5aQxq","username":"ItayResponder","_id":"5fcca8c526909928a85ea0a6"}
 Sun, 06 Dec 2020 09:47:49 GMT - Debug - auth.service - login with email: itayResponder@walla.com
+Sun, 06 Dec 2020 10:47:14 GMT - Info - Server is running on port: 3030
+Sun, 06 Dec 2020 11:00:49 GMT - Info - Server is running on port: 3030
+Sun, 06 Dec 2020 11:24:39 GMT - Info - Server is running on port: 3030
+Sun, 06 Dec 2020 15:41:47 GMT - Info - Server is running on port: 3030
+Sun, 06 Dec 2020 21:00:16 GMT - Info - Server is running on port: 3030
